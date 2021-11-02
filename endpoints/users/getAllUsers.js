@@ -11,11 +11,6 @@ exports.handler = async (event, context) => {
 
   const params = {
     TableName: "User-Data",
-    Key: {
-      username: "",
-      email: "",
-      password: "",
-    },
   };
 
   let users = "";
