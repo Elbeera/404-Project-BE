@@ -17,7 +17,15 @@ exports.handler = async (event, context) => {
 
   try {
     const data = await documentClient.scan(params).promise();
-    plants = JSON.stringify(data.Items);
+    if (event.queryStringParameters && event.queryStringParameters.category) {
+      console.log("query worked");
+      const filteredPlants = data.Items.filter(
+        (plant) => plant.category === event.queryStringParameters.category
+      );
+      plants = JSON.stringify(filteredPlants);
+    } else {
+      plants = JSON.stringify(data.Items);
+    }
     statusCode = 200;
   } catch (err) {
     console.log(err);
@@ -26,8 +34,12 @@ exports.handler = async (event, context) => {
   }
 
   const response = {
-    statusCode,
-    plants,
+    statusCode: statusCode,
+    headers: {
+      my_header: "my_value",
+    },
+    body: plants,
+    isBase64Encoded: false,
   };
 
   return response;
