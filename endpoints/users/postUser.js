@@ -15,6 +15,7 @@ exports.handler = async (event, context) => {
       email: "example@example.com",
       username: "example-user",
       password: "example-password",
+      userPlants: [],
     },
   };
 
@@ -28,7 +29,11 @@ exports.handler = async (event, context) => {
     console.log(data);
   } catch (err) {
     user = "Unable to create user, please try again";
-    statusCode = 500;
+    if (err.statusCode) {
+      statusCode = err.statusCode;
+    } else {
+      statusCode = 500;
+    }
     console.log(err);
   }
 

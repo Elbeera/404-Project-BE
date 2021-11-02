@@ -23,7 +23,11 @@ exports.handler = async (event, context) => {
     console.log(data);
   } catch (err) {
     users = "Unable to get users, please try again";
-    statusCode = 500;
+    if (err.statusCode) {
+      statusCode = err.statusCode;
+    } else {
+      statusCode = 500;
+    }
     console.log(err);
   }
 
