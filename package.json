@@ -1,0 +1,22 @@
+{
+  "name": "404-project-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elbeera/404-Project-BE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elbeera/404-Project-BE/issues"
+  },
+  "homepage": "https://github.com/Elbeera/404-Project-BE#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
