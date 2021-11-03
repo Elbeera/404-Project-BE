@@ -8,16 +8,16 @@ exports.handler = async (event, context) => {
   const documentClient = new AWS.DynamoDB.DocumentClient({
     region: "eu-west-2",
   });
+  const { username, email, password } = JSON.parse(event.body);
 
   const params = {
     TableName: "User-Data",
     Item: {
-      email: "example@example.com",
-      username: "example-user",
-      password: "example-password",
+      email: email,
+      username: username,
+      password: password,
       userPlants: [],
     },
-    ReturnValues: "ALL_OLD",
   };
 
   let user = "";
@@ -25,7 +25,7 @@ exports.handler = async (event, context) => {
 
   try {
     const data = await documentClient.put(params).promise();
-    user = params.Item;
+    user = JSON.stringify(data.Item);
     statusCode = 201;
   } catch (err) {
     user = "Unable to create user, please try again";
@@ -38,7 +38,11 @@ exports.handler = async (event, context) => {
 
   const response = {
     statusCode: statusCode,
-    myUser: user,
+    headers: {
+      my_header: "my_value",
+    },
+    body: user,
+    isBase64Encoded: false,
   };
 
   return response;

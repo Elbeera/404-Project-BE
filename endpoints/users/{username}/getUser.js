@@ -9,10 +9,12 @@ exports.handler = async (event, context) => {
     region: "eu-west-2",
   });
 
+  const { username } = event.pathParameters;
+
   const params = {
     TableName: "User-Data",
     Key: {
-      username: "example2-user",
+      username: username,
     },
   };
 
@@ -21,9 +23,7 @@ exports.handler = async (event, context) => {
 
   try {
     const data = await documentClient.scan(params).promise();
-    user = data.Items.filter((index) => {
-      return index.username === params.Key.username;
-    });
+    user = JSON.stringify(data.Item);
     statusCode = 200;
   } catch (err) {
     user = "Unable to get user, please try again";
@@ -36,7 +36,10 @@ exports.handler = async (event, context) => {
 
   const response = {
     statusCode: statusCode,
-    user: user,
+    headers: {
+      my_header: "my_value",
+    },
+    body: user,
   };
 
   return response;

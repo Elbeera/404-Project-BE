@@ -9,28 +9,25 @@ exports.handler = async (event, context) => {
     region: "eu-west-2",
   });
 
+  const { username } = event.pathParameters;
+
   const params = {
     TableName: "User-Data",
     Key: {
-      username: "example1-user",
+      username: username,
     },
   };
 
-  let userPlants = "";
+  let userData = "";
   let statusCode = 0;
 
   try {
-    const data = await documentClient.scan(params).promise();
-    const userData = data.Items.filter((index) => {
-      return index.username === params.Key.username;
-    });
-    userPlants = {
-      username: userData[0].username,
-      "user's plants": userData[0].userPlants,
-    };
+    const data = await documentClient.get(params).promise();
+    userData = JSON.stringify(data.Item.userPlants);
+
     statusCode = 200;
   } catch (err) {
-    userPlants = "Unable to get user's Plants, please try again";
+    userData = "Unable to get user's Plants, please try again";
     if (err.statusCode) {
       statusCode = err.statusCode;
     } else {
@@ -40,7 +37,11 @@ exports.handler = async (event, context) => {
 
   const response = {
     statusCode: statusCode,
-    userPlants: userPlants,
+    headers: {
+      my_header: "my_value",
+    },
+    body: userData,
+    isBase64Encoded: false,
   };
 
   return response;
