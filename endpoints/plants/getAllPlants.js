@@ -17,14 +17,30 @@ exports.handler = async (event, context) => {
 
   try {
     const data = await documentClient.scan(params).promise();
+
+    plants = data.Items.sort((a, b) =>
+      a.commonName > b.commonName ? 1 : b.commonName > a.commonName ? -1 : 0
+    );
+
     if (event.queryStringParameters && event.queryStringParameters.category) {
-      console.log("query worked");
-      const filteredPlants = data.Items.filter(
+      const filteredPlants = plants.filter(
         (plant) => plant.category === event.queryStringParameters.category
       );
       plants = JSON.stringify(filteredPlants);
+    } else if (
+      event.queryStringParameters &&
+      event.queryStringParameters.search
+    ) {
+      const filteredPlants = plants.filter((plant) => {
+        const regex = new RegExp(
+          `.*${event.queryStringParameters.search}.*`,
+          "gi"
+        );
+        return regex.test(plant.commonName || plant.botanicalName);
+      });
+      plants = JSON.stringify(filteredPlants);
     } else {
-      plants = JSON.stringify(data.Items);
+      plants = JSON.stringify(plants);
     }
     statusCode = 200;
   } catch (err) {
