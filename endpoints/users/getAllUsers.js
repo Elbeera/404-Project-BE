@@ -20,7 +20,6 @@ exports.handler = async (event, context) => {
     const data = await documentClient.scan(params).promise();
     users = data;
     statusCode = 200;
-    console.log(data);
   } catch (err) {
     users = "Unable to get users, please try again";
     if (err.statusCode) {
@@ -28,7 +27,6 @@ exports.handler = async (event, context) => {
     } else {
       statusCode = 500;
     }
-    console.log(err);
   }
 
   const response = {
