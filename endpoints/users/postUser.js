@@ -17,6 +17,7 @@ exports.handler = async (event, context) => {
       password: "example-password",
       userPlants: [],
     },
+    ReturnValues: "ALL_OLD",
   };
 
   let user = "";
@@ -24,9 +25,8 @@ exports.handler = async (event, context) => {
 
   try {
     const data = await documentClient.put(params).promise();
-    user = data;
+    user = params.Item;
     statusCode = 201;
-    console.log(data);
   } catch (err) {
     user = "Unable to create user, please try again";
     if (err.statusCode) {
@@ -39,9 +39,7 @@ exports.handler = async (event, context) => {
 
   const response = {
     statusCode: statusCode,
-    myUser: {
-      body: user,
-    },
+    myUser: user,
   };
 
   return response;
