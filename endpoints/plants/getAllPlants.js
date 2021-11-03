@@ -23,10 +23,21 @@ exports.handler = async (event, context) => {
     );
 
     if (event.queryStringParameters && event.queryStringParameters.category) {
-      console.log("query worked");
       const filteredPlants = plants.filter(
         (plant) => plant.category === event.queryStringParameters.category
       );
+      plants = JSON.stringify(filteredPlants);
+    } else if (
+      event.queryStringParameters &&
+      event.queryStringParameters.search
+    ) {
+      const filteredPlants = plants.filter((plant) => {
+        const regex = new RegExp(
+          `.*${event.queryStringParameters.search}.*`,
+          "gi"
+        );
+        return regex.test(plant.commonName || plant.botanicalName);
+      });
       plants = JSON.stringify(filteredPlants);
     } else {
       plants = JSON.stringify(plants);
