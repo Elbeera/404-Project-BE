@@ -11,17 +11,22 @@ exports.handler = async (event, context) => {
 
   const params = {
     TableName: "User-Data",
+    Key: {
+      username: "example2-user",
+    },
   };
 
-  let users = "";
+  let user = "";
   let statusCode = 0;
 
   try {
     const data = await documentClient.scan(params).promise();
-    users = data;
+    user = data.Items.filter((index) => {
+      return index.username === params.Key.username;
+    });
     statusCode = 200;
   } catch (err) {
-    users = "Unable to get users, please try again";
+    user = "Unable to get user, please try again";
     if (err.statusCode) {
       statusCode = err.statusCode;
     } else {
@@ -31,7 +36,7 @@ exports.handler = async (event, context) => {
 
   const response = {
     statusCode: statusCode,
-    allUsers: users,
+    user: user,
   };
 
   return response;

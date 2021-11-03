@@ -34,7 +34,6 @@ exports.handler = async (event, context) => {
     } else {
       statusCode = 500;
     }
-    console.log(err);
   }
 
   const response = {
