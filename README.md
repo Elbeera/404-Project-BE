@@ -1,6 +1,10 @@
 # 404-Project-BE
 
-## Endpoints
+## BETA
+
+https://l81eyc3fja.execute-api.eu-west-2.amazonaws.com/beta
+
+## Current Endpoints
 
 ```http
 GET /plants
@@ -8,4 +12,24 @@ GET /plants
     ?search={filters common and botanical names using regex}
 
 GET /plants/{commonName}
+
+GET /users
+
+POST /users
+    { username, email }
+
+GET /users/{username}
+
+PATCH /users/{username}
+    { username }
+
+GET /users/{username}/plants
+
+POST /users/{username}/plants
+    { nickname, commonName }
+
+GET /users/{username}/plants/{nickname}
+
+DELETE /users/{username}/plants/{nickname}
+
 ```
