@@ -32,4 +32,7 @@ GET /users/{username}/plants/{nickname}
 
 DELETE /users/{username}/plants/{nickname}
 
+PATCH /users/{username}/plants/{nickname}
+    { newNickName }
+
 ```
