@@ -9,7 +9,7 @@ exports.handler = async (event, context) => {
     region: "eu-west-2",
   });
 
-  const { username, nickName } = event.pathParameters;
+  const { username, plant_id } = event.pathParameters;
 
   const params = {
     TableName: "User-Data",
@@ -18,18 +18,18 @@ exports.handler = async (event, context) => {
     },
   };
 
-  let plants = "";
+  let filteredPlants = "";
   let statusCode = 0;
 
   try {
     const data = await documentClient.get(params).promise();
-    plants = data.Item.userPlants;
-    const filteredPlants = plants.filter((index) => {
-      return index.nickName === nickName;
+    const plants = data.Item.userPlants;
+    filteredPlants = plants.filter((index) => {
+      return index.nickName === plant_id;
     });
     statusCode = 200;
   } catch (err) {
-    plants = "Unable to get user plant, please try again";
+    filteredPlants = "Unable to get user plant, please try again";
     if (err.statusCode) {
       statusCode = err.statusCode;
     } else {
@@ -42,7 +42,7 @@ exports.handler = async (event, context) => {
     headers: {
       my_header: "my_value",
     },
-    body: JSON.stringify(plants),
+    body: JSON.stringify(filteredPlants),
     isBase64Encoded: false,
   };
 
