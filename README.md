@@ -21,7 +21,7 @@ POST /users
 GET /users/{username}
 
 PATCH /users/{username}
-    { username }
+    { newUserName }
 
 GET /users/{username}/plants
 
