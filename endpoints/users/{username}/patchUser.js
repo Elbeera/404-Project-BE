@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
     },
   };
 
-  let user = "";
+  let updatedUser = "";
   let statusCode = 0;
 
   try {
@@ -33,13 +33,22 @@ exports.handler = async (event, context) => {
         userPlants: data.Item.userPlants,
       },
     };
-    const updatedUser = await documentClient.put(newParams).promise();
+
+    const updateUser = await documentClient.put(newParams).promise();
     const deleteUser = await documentClient.delete(params).promise();
-    user = updatedUser;
+
+    const newUserDetails = {
+      TableName: "User-Data",
+      Key: {
+        username: newUserName,
+      },
+    };
+
+    updatedUser = await documentClient.get(newUserDetails).promise();
 
     statusCode = 200;
   } catch (err) {
-    user = "Unable to get user, please try again";
+    updatedUser = "Unable to get user, please try again";
     if (err.statusCode) {
       statusCode = err.statusCode;
     } else {
@@ -52,7 +61,7 @@ exports.handler = async (event, context) => {
     headers: {
       my_header: "my_value",
     },
-    body: JSON.stringify(user),
+    body: JSON.stringify(updatedUser),
     isBase64Encoded: false,
   };
 
