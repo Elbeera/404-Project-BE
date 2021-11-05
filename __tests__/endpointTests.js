@@ -3,6 +3,8 @@ const request = require("supertest");
 const app = "https://l81eyc3fja.execute-api.eu-west-2.amazonaws.com/beta";
 // NOTE: We need to remember to update the base URL above once API is deployed from beta to production
 
+// NOTE: POST /users is not tested as this interaction happens between Cognito and Lambda directly
+
 describe("GET /plants", () => {
   test("200: responds with an array of all plants", async () => {
     const result = await request(app).get("/plants").expect(200);
@@ -135,6 +137,18 @@ describe("GET /users", () => {
       expect.objectContaining({
         username: expect.any(String),
       });
+    });
+  });
+});
+
+describe("GET /users/username", () => {
+  test("200: responds with user with given username", async () => {
+    const result = await request(app).get("/users/MelAxiosTest").expect(200);
+    expect(result.body).toMatchObject({
+      password: "example4-password",
+      username: "MelAxiosTest",
+      email: "example4@example.com",
+      userPlants: [],
     });
   });
 });
