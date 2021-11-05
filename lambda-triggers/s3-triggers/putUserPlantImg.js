@@ -1,22 +1,23 @@
 "use strict";
 const AWS = require("aws-sdk");
-const s3 = new AWS.s3();
+const s3 = new AWS.S3({ apiVersion: "2006-03-01" });
 
 exports.handler = async (event, context, callback) => {
-  const { name } = event.Records[0].s3.bucket;
-  const { key } = event.Records[0].s3.object;
+  const bucket = event.Records[0].s3.bucket.name;
+  const key = decodeURIComponent(
+    event.Records[0].s3.object.key.replace(/\+/g, " ")
+  );
 
   const params = {
-    Bucket: name,
+    Bucket: bucket,
     Key: key,
   };
 
   try {
-    const data = await s3.getObject(params).promise();
-    const userImgStr = data.Body.toString();
-    const parsedImg = JSON.parse(userImgStr);
+    const { ContentType } = await s3.getObject(params).promise();
 
-    console.log(data);
+    console.log(ContentType);
+    // console.log(data);a
   } catch (err) {
     console.log(err);
   }

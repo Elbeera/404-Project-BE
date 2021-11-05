@@ -10,10 +10,12 @@ exports.handler = async (event, context) => {
 
   const { commonName } = event.pathParameters;
 
+  const formattedCommonName = commonName.split("%20").join(" ");
+
   const params = {
     TableName: "Plant-Data-New",
     Key: {
-      commonName: commonName,
+      commonName: formattedCommonName,
     },
   };
 
