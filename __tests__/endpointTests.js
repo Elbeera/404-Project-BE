@@ -127,3 +127,14 @@ describe("GET /plants/commonName", () => {
     });
   });
 });
+
+describe("GET /users", () => {
+  test("200: responds with all users", async () => {
+    const result = await request(app).get("/users").expect(200);
+    result.body.allUsers.Items.forEach((user) => {
+      expect.objectContaining({
+        username: expect.any(String),
+      });
+    });
+  });
+});
