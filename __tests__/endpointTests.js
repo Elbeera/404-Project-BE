@@ -97,3 +97,33 @@ describe("GET /plants?search=searchCriteria", () => {
     });
   });
 });
+
+describe("GET /plants/commonName", () => {
+  test("200: responds with plant matched with commonName input", async () => {
+    const result = await request(app).get("/plants/Snapdragons").expect(200);
+    expect(result.body).toMatchObject({
+      wiki: "wikipedia.org/wiki/Antirrhinum_majus",
+      careDetails: {
+        min_soil_moist: 15,
+        min_temp: 5,
+        max_env_humid: 80,
+        min_env_humid: 30,
+        min_light_lux: 2500,
+        min_soil_ec: 350,
+        max_light_mmol: 5000,
+        max_light_lux: 50000,
+        max_soil_ec: 2000,
+        max_temp: 35,
+        min_light_mmol: 3500,
+        max_soil_moist: 60,
+      },
+      category: "Flowering House Plants",
+      botanicalName: "Antirrhinum majus",
+      commonName: "Snapdragons",
+      image_url:
+        "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/antirrhinum%20majus.jpg",
+      description:
+        'Antirrhinum majus, the common snapdragon (often - especially in horticulture - simply "snapdragon"), is a species of flowering plant belonging to the genus Antirrhinum. The plant was placed in the family Plantaginaceae following a revision of its prior classical family, Scrophulariaceae.The common name "snapdragon", originates from the flowers\' reaction to having their throats squeezed, which causes the "mouth" of the flower to snap open like a dragon\'s mouth. It is widely used as an ornamental plant in borders and as a cut flower. It is perennial but usually cultivated as an annual plant. The species has been in culture since the 15th century.',
+    });
+  });
+});
