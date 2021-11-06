@@ -156,7 +156,7 @@ describe("GET /users/username", () => {
   });
 });
 
-// NOTE: Patch will need to be tested with updated data in DB to pass
+// NOTE: PATCH /users/username will need to be tested with updated data in DB to pass
 
 describe("PATCH /users/username", () => {
   test("200: responds with updated user", async () => {
