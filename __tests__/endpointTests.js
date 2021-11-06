@@ -1,7 +1,10 @@
 const { expect } = require("@jest/globals");
 const request = require("supertest");
 const app = "https://l81eyc3fja.execute-api.eu-west-2.amazonaws.com/beta";
-// NOTE: We need to remember to update the base URL above once API is deployed from beta to production
+
+// NOTE: base URL (app) may need to be updated once API is deployed from beta to production
+
+// NOTE: tests may fail if data in DynamoDB is updated - tests may need to be amended to reflect data available in the DB
 
 // NOTE: POST /users is not tested as this interaction happens between Cognito and Lambda directly
 
@@ -143,12 +146,70 @@ describe("GET /users", () => {
 
 describe("GET /users/username", () => {
   test("200: responds with user with given username", async () => {
-    const result = await request(app).get("/users/MelAxiosTest").expect(200);
+    const result = await request(app).get("/users/example2-user").expect(200);
     expect(result.body).toMatchObject({
+      password: "example2-password",
+      username: "example2-user",
+      email: "example2@example.com",
+      userPlants: [],
+    });
+  });
+});
+
+// NOTE: Patch will need to be tested with updated data in DB to pass
+
+describe("PATCH /users/username", () => {
+  test("200: responds with updated user", async () => {
+    const result = await request(app)
+      .patch("/users/MelAxiosTest4")
+      .send({ newUserName: "MelAxiosTest5" })
+      .expect(200);
+    expect(result.body.Item).toMatchObject({
       password: "example4-password",
-      username: "MelAxiosTest",
+      username: "MelAxiosTest5",
       email: "example4@example.com",
       userPlants: [],
+    });
+  });
+});
+
+describe("GET /users/username/plants", () => {
+  test("200: responds with specified users plants", async () => {
+    const result = await request(app)
+      .get("/users/example-user/plants")
+      .expect(200);
+    expect(result.body).toEqual([
+      {
+        commonName: "cat",
+        nextWatering: null,
+        lastWatered: null,
+      },
+      {
+        commonName: "anything1",
+        lastWatered: null,
+        nickName: "test2",
+        nextWatering: null,
+      },
+      {
+        commonName: "anything3",
+        nextWatering: null,
+        lastWatered: null,
+      },
+    ]);
+  });
+});
+
+describe("POST /users/username/plants", () => {
+  test("200: responds with the ", async () => {
+    const result = await request(app)
+      .post("/users/meltest/plants")
+      .send({ nickName: "Sid", commonName: "Aloe Vera" })
+      .expect(200);
+    expect(result.body[0]).toMatchObject({
+      commonName: "Aloe Vera",
+      lastWatered: null,
+      nickName: "Sid",
+      nextWatering: null,
     });
   });
 });
