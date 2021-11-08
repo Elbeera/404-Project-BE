@@ -24,8 +24,8 @@ exports.handler = async (event, context) => {
   try {
     const data = await documentClient.get(params).promise();
     const plants = data.Item.userPlants;
-    filteredPlants = plants.filter((index) => {
-      return index.nickName === plant_id;
+    filteredPlants = plants.filter((plant) => {
+      return plant.plant_id === plant_id;
     });
     statusCode = 200;
   } catch (err) {
