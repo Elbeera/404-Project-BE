@@ -10,47 +10,62 @@ exports.handler = async (event, context) => {
   });
 
   const { username } = event.pathParameters;
-  const { nickName, commonName, img_url } = JSON.parse(event.body);
+  const { nickName, commonName, userImage } = JSON.parse(event.body);
 
-  const itemToAdd = {
-    nickName: nickName,
-    commonName: commonName,
-    image: img_url,
-    lastWatered: null,
-    nextWatering: null,
-  };
-
-  const params = {
+  const userParams = {
     TableName: "User-Data",
     Key: {
       username: username,
     },
   };
 
-  let userData = "";
+  const plantParams = {
+    TableName: "Plant-Data-New",
+    Key: {
+      commonName: commonName,
+    },
+  };
+
+  let newUserPlants = [];
   let statusCode = 0;
 
   try {
-    const data = await documentClient.get(params).promise();
-    userData = data.Item.userPlants;
-    userData.push(itemToAdd);
+    const userData = await documentClient.get(userParams).promise();
+    const plantData = await documentClient.get(plantParams).promise();
 
-    const newUser = {
+    const plantId = `${username}-${Date.now()}`;
+
+    const itemToAdd = {
+      plant_id: plantId,
+      nickName: nickName,
+      commonName: commonName,
+      image: userImage ? userImage : plantData.Item.image_url,
+      lastWatered: null,
+      nextWatering: null,
+    };
+
+    const updatedPlants = [...userData.Item.userPlants, itemToAdd];
+
+    const updatedUser = {
       TableName: "User-Data",
       Item: {
-        username: data.Item.username,
-        email: data.Item.email,
-        password: data.Item.password,
-        userPlants: userData,
+        username: userData.Item.username,
+        email: userData.Item.email,
+        userPlants: updatedPlants,
       },
     };
 
-    const putData = await documentClient.put(newUser).promise();
+    await documentClient.put(updatedUser).promise();
 
-    console.log(data.Item);
+    const insertedUser = await documentClient.get(userParams).promise();
+
+    newUserPlants = insertedUser.Item.userPlants.find(
+      (plant) => plant.plant_id === plantId
+    );
+
     statusCode = 200;
   } catch (err) {
-    userData = "Unable to get user's Plants, please try again";
+    newUserPlants = "Unable to get user's Plants, please try again";
     if (err.statusCode) {
       statusCode = err.statusCode;
     } else {
@@ -63,7 +78,7 @@ exports.handler = async (event, context) => {
     headers: {
       my_header: "my_value",
     },
-    body: JSON.stringify(userData),
+    body: JSON.stringify(newUserPlants),
     isBase64Encoded: false,
   };
 

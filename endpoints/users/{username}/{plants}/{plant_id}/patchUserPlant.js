@@ -19,15 +19,15 @@ exports.handler = async (event, context) => {
     },
   };
 
-  let filteredPlants = "";
+  let updatedPlant = "";
   let statusCode = 0;
 
   try {
     const data = await documentClient.get(params).promise();
 
     const plants = data.Item.userPlants;
-    filteredPlants = plants.map((plant) => {
-      if (plant.nickName === plant_id) {
+    const filteredPlants = plants.map((plant) => {
+      if (plant.plant_id === plant_id) {
         plant.nickName = newNickName;
       }
       return plant;
@@ -45,10 +45,15 @@ exports.handler = async (event, context) => {
     };
 
     await documentClient.put(newParams).promise();
+    const updatedUser = await documentClient.get(params).promise();
+    const updatedUserPlants = updatedUser.Item.userPlants;
+    updatedPlant = updatedUserPlants.find((plant) => {
+      return plant.plant_id === plant_id;
+    });
 
     statusCode = 200;
   } catch (err) {
-    filteredPlants = "Unable to get user plant, please try again";
+    updatedPlant = "Unable to get user plant, please try again";
     if (err.statusCode) {
       statusCode = err.statusCode;
     } else {
@@ -61,7 +66,7 @@ exports.handler = async (event, context) => {
     headers: {
       my_header: "my_value",
     },
-    body: JSON.stringify(filteredPlants),
+    body: JSON.stringify(updatedPlant),
     isBase64Encoded: false,
   };
 
