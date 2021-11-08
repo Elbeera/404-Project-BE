@@ -24,8 +24,8 @@ exports.handler = async (event, context) => {
   try {
     const data = await documentClient.get(params).promise();
     user = data.Item.userPlants;
-    const filteredPlants = user.filter((index) => {
-      return index.nickName !== plant_id;
+    const filteredPlants = user.filter((plant) => {
+      return plant.plant_id !== plant_id;
     });
     console.log(filteredPlants);
 
