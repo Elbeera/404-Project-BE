@@ -3,22 +3,76 @@ const AWS = require("aws-sdk");
 const s3 = new AWS.S3({ apiVersion: "2006-03-01" });
 
 exports.handler = async (event, context, callback) => {
+  const documentClient = new AWS.DynamoDB.DocumentClient({
+    region: "eu-west-2",
+  });
   const bucket = event.Records[0].s3.bucket.name;
   const key = decodeURIComponent(
     event.Records[0].s3.object.key.replace(/\+/g, " ")
   );
 
-  const params = {
+  const s3Params = {
     Bucket: bucket,
     Key: key,
   };
 
-  try {
-    const { ContentType } = await s3.getObject(params).promise();
+  let responseBody = {};
+  let statusCode = 0;
 
-    console.log(ContentType);
-    // console.log(data);a
+  try {
+    const { Metadata } = await s3.getObject(s3Params).promise();
+
+    const userParams = {
+      TableName: "User-Data",
+      Key: {
+        username: Metadata.username,
+      },
+    };
+
+    const userData = await documentClient.get(userParams).promise();
+    const userPlants = userData.Item.userPlants;
+
+    const updatedPlants = userPlants.map((plant) => {
+      if (plant.plant_id === Metadata.plant_id) {
+        const updatedGallery = plant.userGallery
+          ? [...plant.userGallery, Metadata.objectURL]
+          : [Metadata.objectURL];
+        plant.userGallery = updatedGallery;
+      }
+      return plant;
+    });
+
+    const newUserParams = {
+      TableName: "User-Data",
+      Item: {
+        username: userData.Item.username,
+        email: userData.Item.email,
+        userPlants: updatedPlants,
+      },
+    };
+    console.log(updatedPlants);
+    await documentClient.put(newUserParams).promise();
+
+    responseBody.msg = "Plant image inserted";
+    statusCode = 200;
   } catch (err) {
     console.log(err);
+    responseBody.msg = "Unable to get user plant, please try again";
+    if (err.statusCode) {
+      statusCode = err.statusCode;
+    } else {
+      statusCode = 500;
+    }
   }
+
+  const response = {
+    statusCode: statusCode,
+    headers: {
+      my_header: "my_value",
+    },
+    body: JSON.stringify(responseBody),
+    isBase64Encoded: false,
+  };
+
+  return response;
 };
