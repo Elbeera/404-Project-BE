@@ -37,7 +37,7 @@ exports.handler = async (event, context) => {
 
     const itemToAdd = {
       plant_id: plantId,
-      nickName: nickName ? nickName : commonName,
+      nickName: nickName,
       commonName: commonName,
       image: userImage ? userImage : plantData.Item.image_url,
       lastWatered: null,
