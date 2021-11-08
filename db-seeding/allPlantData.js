@@ -19,6 +19,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 36500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aloe%20arborescens.jpg",
@@ -43,6 +46,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 32000,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/agave%20filifera.jpg",
@@ -67,6 +73,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 200,
+      avgMoist: 40,
+      avgLux: 15600,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/schlumbergera%20bridgesii.jpg",
@@ -91,6 +100,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 36250,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/euphorbia%20milii.jpg",
@@ -115,6 +127,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 30750,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/sansevieria%20cylindrica.jpg",
@@ -139,6 +154,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/adenium%20obesum.jpg",
@@ -163,6 +181,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 27000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/sedum%20morganianum.jpg",
@@ -187,6 +208,9 @@ const allPlantData = [
       min_soil_moist: 12,
       max_soil_ec: 1600,
       min_soil_ec: 50,
+      avgMoist: 36,
+      avgLux: 28500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/hatiora%20gaertneri.jpg",
@@ -211,6 +235,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 47000,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/echeveria%20chihuahuaensis.jpg",
@@ -235,6 +262,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 33.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/kalanchoe%20blossfeldiana.jpg",
@@ -259,6 +289,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 16750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/gasteria%20gracilis%20var.%20minima.jpg",
@@ -283,6 +316,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 28750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/haworthia%20fasciata.jpg",
@@ -307,6 +343,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 13500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/hoya%20kerrii.jpg",
@@ -331,6 +370,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 50,
+      avgMoist: 28.5,
+      avgLux: 66500,
+      lightRequirements: "High-light or full-sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/crassula%20ovata.jpg",
@@ -355,6 +397,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 46750,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/lithops%20pseudotruncatella.jpg",
@@ -379,6 +424,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 32000,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pachypodium%20lamerei.jpg",
@@ -403,6 +451,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 30750,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/sansevieria%20trifasciata.jpg",
@@ -427,6 +478,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 41600,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/kalanchoe%20daigremontiana.jpg",
@@ -451,6 +505,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1500,
       min_soil_ec: 350,
+      avgMoist: 28.5,
+      avgLux: 13500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/epiphyllum%20oxypetalum.jpg",
@@ -475,6 +532,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 32000,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/kalanchoe%20thyrsiflora.jpg",
@@ -499,6 +559,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 28900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/kalanchoe%20tomentosa.jpg",
@@ -523,6 +586,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 6500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/beaucarnea%20recurvata.jpg",
@@ -547,6 +613,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 50,
+      avgMoist: 40,
+      avgLux: 43500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/senecio%20himalaya.jpg",
@@ -571,6 +640,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 12900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/senecio%20rowleyanus.jpg",
@@ -595,6 +667,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 46500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/sedum%20rubrotinctum.jpg",
@@ -619,6 +694,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 200,
+      avgMoist: 40,
+      avgLux: 15600,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/schlumbergera%20bridgesii.jpg",
@@ -643,6 +721,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 31750,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/faucaria%20boschiana.jpg",
@@ -667,6 +748,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 10750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/yucca%20elephantipes.jpg",
@@ -691,6 +775,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/achimenes%20spp..jpg",
@@ -715,6 +802,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/agapanthus%20africanus.jpg",
@@ -739,6 +829,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/saintpaulia%20ionantha.jpg",
@@ -763,6 +856,9 @@ const allPlantData = [
       min_soil_moist: 0,
       max_soil_ec: 0,
       min_soil_ec: 0,
+      avgMoist: 0,
+      avgLux: 23000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/tillandsia%20spp..jpg",
@@ -787,6 +883,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 18500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/amaryllis%20%27amigo%27.jpg",
@@ -811,6 +910,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 29000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/magnolia%20grandiflora.jpg",
@@ -835,6 +937,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/brugmansia%20suaveolens.jpg",
@@ -859,6 +964,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 18500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/begonia%20coccinea.jpg",
@@ -883,6 +991,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 18250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/anthurium%20andraeanum.jpg",
@@ -907,6 +1018,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 13500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/rhododendron%20simsii.jpg",
@@ -931,6 +1045,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/michelia%20figo.jpg",
@@ -955,6 +1072,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/scaevola%20taccada.jpg",
@@ -979,6 +1099,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 18500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/begonia%20monza%20%27appleblossom%27.jpg",
@@ -1003,6 +1126,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/strelitzia%20reginae.jpg",
@@ -1027,6 +1153,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 20250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/clerodendrum%20thomsonae.jpg",
@@ -1051,6 +1180,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 15650,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/haemanthus%20multiflorus.jpg",
@@ -1075,6 +1207,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 27000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/callistemon%20citrinus.jpg",
@@ -1099,6 +1234,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 36500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/bougainvillea%20spp..jpg",
@@ -1123,6 +1261,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aesculus%20x%20carnea.jpg",
@@ -1147,6 +1288,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 13500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/camellia%20japonica.jpg",
@@ -1171,6 +1315,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 27000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/campanula%20rotundifolia.jpg",
@@ -1195,6 +1342,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/streptocarpus%20spp..jpg",
@@ -1219,6 +1369,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 27000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/celosia%20plumosa.jpg",
@@ -1243,6 +1396,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/cuphea%20ignea.jpg",
@@ -1267,6 +1423,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 13250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/clivia%20miniata.jpg",
@@ -1291,6 +1450,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/ardisia%20crenata.jpg",
@@ -1315,6 +1477,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/crocus%20spp..jpg",
@@ -1339,6 +1504,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 23600,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/cyclamen%20persicum.jpg",
@@ -1363,6 +1531,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/narcissus%20spp..jpg",
@@ -1387,6 +1558,9 @@ const allPlantData = [
       min_soil_moist: 17,
       max_soil_ec: 1500,
       min_soil_ec: 350,
+      avgMoist: 38.5,
+      avgLux: 16000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/iris.jpg",
@@ -1411,6 +1585,9 @@ const allPlantData = [
       min_soil_moist: 17,
       max_soil_ec: 1500,
       min_soil_ec: 350,
+      avgMoist: 38.5,
+      avgLux: 16000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/iris%20reticulata.jpg",
@@ -1435,6 +1612,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 23500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/lilium%20longiflorum.jpg",
@@ -1459,6 +1639,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/crossandra%20infundibuliformis.jpg",
@@ -1483,6 +1666,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 100,
+      avgMoist: 37.5,
+      avgLux: 36000,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/russelia%20equisetiformis.jpg",
@@ -1507,6 +1693,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 18250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/anthurium%20andraeanum.jpg",
@@ -1531,6 +1720,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 29000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/chrysanthemum%20morifolium.jpg",
@@ -1555,6 +1747,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/abutilon%20megapotamicum.jpg",
@@ -1579,6 +1774,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 33.5,
+      avgLux: 16500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/freesia%20x.jpg",
@@ -1603,6 +1801,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/fuchsia%20magellanica.jpg",
@@ -1627,6 +1828,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 26150,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/gardenia%20jasminoides.jpg",
@@ -1651,6 +1855,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pelargonium%20x%20hortorum.jpg",
@@ -1675,6 +1882,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 29000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/gerbera%20jamesonii.jpg",
@@ -1699,6 +1909,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 6500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/gloriosa%20superba.jpg",
@@ -1723,6 +1936,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 12000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/sinningia%20speciosa.jpg",
@@ -1747,6 +1963,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 29000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/musella%20lasiocarpa.jpg",
@@ -1771,6 +1990,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pachystachys%20lutea.jpg",
@@ -1795,6 +2017,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/allamanda%20cathartica.jpg",
@@ -1819,6 +2044,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/muscari%20%27blue%20spike%27.jpg",
@@ -1843,6 +2071,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/heliconia%20angusta.jpg",
@@ -1867,6 +2098,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/helleborus%20niger.jpg",
@@ -1891,6 +2125,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 28750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/hibiscus%20rosa%20sinensis.jpg",
@@ -1915,6 +2152,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/hyacinthus%20orientalis.jpg",
@@ -1939,6 +2179,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 15500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/hydrangea%20m.%20magical%20pacific.jpg",
@@ -1963,6 +2206,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 21750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/impatiens%20hawkeri.jpg",
@@ -1987,6 +2233,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pelargonium%20x%20peltatum.jpg",
@@ -2011,6 +2260,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31850,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/ixora%20coccinea.jpg",
@@ -2035,6 +2287,9 @@ const allPlantData = [
       min_soil_moist: 25,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 57.5,
+      avgLux: 41850,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/jasminum%20polyanthum.jpg",
@@ -2059,6 +2314,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/lantana%20camara.jpg",
@@ -2083,6 +2341,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/convallaria%20majalis.jpg",
@@ -2107,6 +2368,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 10900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aeschynanthus%20lobbianus.jpg",
@@ -2131,6 +2395,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 19350,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/stephanotis%20floribunda.jpg",
@@ -2155,6 +2422,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/mandevilla%20spp..jpg",
@@ -2179,6 +2449,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pelargonium%20x%20domesticum%20%27aztec%27.jpg",
@@ -2203,6 +2476,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 18500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/medinilla%20magnifica.jpg",
@@ -2227,6 +2503,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 15900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/plectranthus%20%27mona%20lavender%27.jpg",
@@ -2251,6 +2530,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 21750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/impatiens%20hawkeri.jpg",
@@ -2275,6 +2557,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 27000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/nerium%20oleander.jpg",
@@ -2299,6 +2584,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 41500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/viola%20x%20wittrockiana.jpg",
@@ -2323,6 +2611,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/narcissus%20jonquilla.jpg",
@@ -2347,6 +2638,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 34500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/passiflora%20caerulea.jpg",
@@ -2371,6 +2665,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 11750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/spathiphyllum%20%27coco%20cupido%27.jpg",
@@ -2395,6 +2692,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 21250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/catharanthus%20roseus.jpg",
@@ -2419,6 +2719,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/exacum%20affine.jpg",
@@ -2443,6 +2746,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/mixed%20color%20zantedeschia%20aethiopica.jpg",
@@ -2467,6 +2773,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 37.5,
+      avgLux: 13900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/tillandsia%20cyanea.jpg",
@@ -2491,6 +2800,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 200,
+      avgMoist: 37.5,
+      avgLux: 34250,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/plumeria%20rubra.jpg",
@@ -2515,6 +2827,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 27000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/calceolaria%20crenatiflora.jpg",
@@ -2539,6 +2854,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 17000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/euphorbia%20pulcherrima.jpg",
@@ -2563,6 +2881,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/calliandra%20haematocephala.jpg",
@@ -2587,6 +2908,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16100,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/primula%20vulgaris.jpg",
@@ -2611,6 +2935,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 37.5,
+      avgLux: 13900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/billbergia%20nutans.jpg",
@@ -2635,6 +2962,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/alpinia%20galanga.jpg",
@@ -2659,6 +2989,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 12000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/lycoris%20radiata.jpg",
@@ -2683,6 +3016,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 37.5,
+      avgLux: 13900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/guzmania%20lingulata.jpg",
@@ -2707,6 +3043,9 @@ const allPlantData = [
       min_soil_moist: 18,
       max_soil_ec: 1600,
       min_soil_ec: 300,
+      avgMoist: 39,
+      avgLux: 21000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/oxalis%20triangularis.jpg",
@@ -2731,6 +3070,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/curcuma%20%27alismatifolia%27.jpg",
@@ -2755,6 +3097,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/antirrhinum%20majus.jpg",
@@ -2779,6 +3124,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/tulipa%20%27christmas%20marvel%27.jpg",
@@ -2803,6 +3151,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aechmea%20fasciata.jpg",
@@ -2827,6 +3178,9 @@ const allPlantData = [
       min_soil_moist: 17,
       max_soil_ec: 1500,
       min_soil_ec: 350,
+      avgMoist: 38.5,
+      avgLux: 16000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/neomarica%20gracilis.jpg",
@@ -2851,6 +3205,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 18500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/begonia%20x%20semperflorens%20cultorum.jpg",
@@ -2875,6 +3232,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 13500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/hoya%20carnosa.jpg",
@@ -2899,6 +3259,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 12850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pilea%20cadierei.jpg",
@@ -2923,6 +3286,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 18500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/dypsis%20lutescens.jpg",
@@ -2947,6 +3313,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 4750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/syngonium%20podophyllum.jpg",
@@ -2971,6 +3340,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/asparagus%20aethiopicus.jpg",
@@ -2995,6 +3367,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/peperomia%20obtusifolia%20%27variegata%27.jpg",
@@ -3019,6 +3394,9 @@ const allPlantData = [
       min_soil_moist: 18,
       max_soil_ec: 2000,
       min_soil_ec: 100,
+      avgMoist: 39,
+      avgLux: 11600,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/soleirolia%20soleirolii.jpg",
@@ -3043,6 +3421,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 6250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/asplenium%20nidus.jpg",
@@ -3067,6 +3448,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 2150,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/nephrolepis%20exaltata%20%27bostoniensis%27.jpg",
@@ -3091,6 +3475,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pteris%20cretica.jpg",
@@ -3115,6 +3502,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 2150,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pellaea%20rotundifolia.jpg",
@@ -3139,6 +3529,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 6500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/caladium%20bicolor.jpg",
@@ -3163,6 +3556,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 10400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/calathea%20orbifolia.jpg",
@@ -3187,6 +3583,9 @@ const allPlantData = [
       min_soil_moist: 18,
       max_soil_ec: 1000,
       min_soil_ec: 100,
+      avgMoist: 41.5,
+      avgLux: 10400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/calathea%20concinna.jpg",
@@ -3211,6 +3610,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 10400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/calathea%20insignis.jpg",
@@ -3235,6 +3637,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 10400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/calathea%20roseopicta.jpg",
@@ -3259,6 +3664,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aristolochia%20californica.jpg",
@@ -3283,6 +3691,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 50,
+      avgMoist: 37.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/drosera%20adelae.jpg",
@@ -3307,6 +3718,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 28500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/zamia%20pumila.jpg",
@@ -3331,6 +3745,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 4500,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aspidistra%20elatior.jpg",
@@ -3355,6 +3772,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/chamaedorea%20elegans.jpg",
@@ -3379,6 +3799,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 15900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/radermachera%20sinica.jpg",
@@ -3403,6 +3826,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aglaonema%20commutatum.jpg",
@@ -3427,6 +3853,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 4300,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pilea%20peperomioides.jpg",
@@ -3451,6 +3880,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/selaginella%20kraussiana.jpg",
@@ -3475,6 +3907,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/coffea%20arabica.jpg",
@@ -3499,6 +3934,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26800,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/coleus%20%27magma%27.jpg",
@@ -3523,6 +3961,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/acalypha%20reptans.jpg",
@@ -3547,6 +3988,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/nertera%20granadensis.jpg",
@@ -3571,6 +4015,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 200,
+      avgMoist: 37.5,
+      avgLux: 26000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/dracaena%20fragrans.jpg",
@@ -3595,6 +4042,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/ficus%20pumila.jpg",
@@ -3619,6 +4069,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 17000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/codiaeum%20variegatum.jpg",
@@ -3643,6 +4096,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/dracaena%20marginata.jpg",
@@ -3667,6 +4123,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 13500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/dieffenbachia%20%27big%20ben%27.jpg",
@@ -3691,6 +4150,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11700,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/alocasia%20cucullata.jpg",
@@ -3715,6 +4177,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 22750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/hedera%20helix.jpg",
@@ -3739,6 +4204,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/schefflera%20elegantissima.jpg",
@@ -3763,6 +4231,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 18750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/ficus%20maclellandii.jpg",
@@ -3787,6 +4258,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 23250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/ficus%20lyrata.jpg",
@@ -3811,6 +4285,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1300,
       min_soil_ec: 200,
+      avgMoist: 37.5,
+      avgLux: 15250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/chlorophytum%20comosum.jpg",
@@ -3835,6 +4312,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 4500,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/caryota%20ochlandra.jpg",
@@ -3859,6 +4339,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/asparagus%20densiflorus.jpg",
@@ -3883,6 +4366,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 12850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pilea%20involucrata.jpg",
@@ -3907,6 +4393,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aucuba%20japonica.jpg",
@@ -3931,6 +4420,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/cissus%20rhombifolia.jpg",
@@ -3955,6 +4447,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 8000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/philodendron%20domesticum.jpg",
@@ -3979,6 +4474,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/cyrtomium%20fortunei.jpg",
@@ -4003,6 +4501,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/tradescantia%20zebrina.jpg",
@@ -4027,6 +4528,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31850,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/iresine%20herbstii.jpg",
@@ -4051,6 +4555,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 20400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/begonia%20rex%20cultorum.jpg",
@@ -4075,6 +4582,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 200,
+      avgMoist: 37.5,
+      avgLux: 26000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/dracaena%20deremensis%20%27warneckii%27.jpg",
@@ -4099,6 +4609,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 10600,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/fatsia%20japonica.jpg",
@@ -4123,6 +4636,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/solanum%20pseudocapsicum.jpg",
@@ -4147,6 +4663,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/juncus%20effusus%20%27spiralis%27.jpg",
@@ -4171,6 +4690,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 13250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/howea%20forsteriana.jpg",
@@ -4195,6 +4717,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 100,
+      avgMoist: 37.5,
+      avgLux: 30500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/rhapis%20excelsa.jpg",
@@ -4219,6 +4744,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 12900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/dracaena%20sanderiana.jpg",
@@ -4243,6 +4771,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 5200,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/adiantum%20capillus%20veneris.jpg",
@@ -4267,6 +4798,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 5000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/polyscias%20fruticosa.jpg",
@@ -4291,6 +4825,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 20600,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pachira%20macrocarpa.jpg",
@@ -4315,6 +4852,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 200,
+      avgMoist: 37.5,
+      avgLux: 13250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/tradescantia%20spathacea.jpg",
@@ -4339,6 +4879,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 16400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/muehlenbeckia%20complexa.jpg",
@@ -4363,6 +4906,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 13250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/fittonia%20verschaffeltii.jpg",
@@ -4387,6 +4933,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 29500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/araucaria%20heterophylla.jpg",
@@ -4411,6 +4960,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 150,
+      avgMoist: 42.5,
+      avgLux: 49000,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/capsicum%20annuum.jpg",
@@ -4435,6 +4987,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 4500,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/cyperus%20papyrus.jpg",
@@ -4459,6 +5014,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/chamaedorea%20elegans.jpg",
@@ -4483,6 +5041,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 10400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/calathea%20makoyana.jpg",
@@ -4507,6 +5068,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 10250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/peperomia%20%27honey%20jasper%27.jpg",
@@ -4531,6 +5095,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/strobilanthes%20dyerianus.jpg",
@@ -4555,6 +5122,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 8000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/philodendron%20spp..jpg",
@@ -4579,6 +5149,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 1500,
       min_soil_ec: 50,
+      avgMoist: 40,
+      avgLux: 23500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/nepenthes%20%27rebecca%20soper%27.jpg",
@@ -4603,6 +5176,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 200,
+      avgMoist: 37.5,
+      avgLux: 26000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/dracaena%20deremensis%20%27warneckii%27.jpg",
@@ -4627,6 +5203,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/hypoestes%20phyllostachya.jpg",
@@ -4651,6 +5230,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 6250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/epipremnum%20aureum.jpg",
@@ -4675,6 +5257,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 10400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/maranta%20leuconeura.jpg",
@@ -4699,6 +5284,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/tradescantia%20pallida.jpg",
@@ -4723,6 +5311,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 11850,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/gynura%20aurantiaca.jpg",
@@ -4747,6 +5338,9 @@ const allPlantData = [
       min_soil_moist: 25,
       max_soil_ec: 1000,
       min_soil_ec: 50,
+      avgMoist: 42.5,
+      avgLux: 36000,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/sarracenia%20purpurea.jpg",
@@ -4771,6 +5365,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31850,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/phoenix%20roebelenii.jpg",
@@ -4795,6 +5392,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/davallia%20mariesii.jpg",
@@ -4819,6 +5419,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 20400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/begonia%20rex%20cultorum.jpg",
@@ -4843,6 +5446,9 @@ const allPlantData = [
       min_soil_moist: 7,
       max_soil_ec: 1000,
       min_soil_ec: 300,
+      avgMoist: 28.5,
+      avgLux: 18750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/ceropegia%20woodii.jpg",
@@ -4867,6 +5473,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 15500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/ficus%20elastica.jpg",
@@ -4891,6 +5500,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 34250,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/cycas%20revoluta.jpg",
@@ -4915,6 +5527,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/scindapsus%20pictus.jpg",
@@ -4939,6 +5554,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 9500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/schefflera%20octophylla.jpg",
@@ -4963,6 +5581,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 31750,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/pandanus%20amaryllifolius.jpg",
@@ -4987,6 +5608,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/mimosa%20pudica.jpg",
@@ -5011,6 +5635,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 50,
+      avgMoist: 37.5,
+      avgLux: 23250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/breynia%20nivosa.jpg",
@@ -5035,6 +5662,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1300,
       min_soil_ec: 200,
+      avgMoist: 37.5,
+      avgLux: 15250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/chlorophytum%20comosum.jpg",
@@ -5059,6 +5689,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 10250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/philodendron%20bipinnatifidum.jpg",
@@ -5083,6 +5716,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1500,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 2150,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/platycerium%20bifurcatum.jpg",
@@ -5107,6 +5743,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/saxifraga%20stolonifera.jpg",
@@ -5131,6 +5770,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 10400,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/stromanthe%20sanguinea.jpg",
@@ -5155,6 +5797,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 50,
+      avgMoist: 37.5,
+      avgLux: 31500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/drosera%20spp..jpg",
@@ -5179,6 +5824,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 15900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/plectranthus%20oertendahlii%20%27emerald%20lace%27.jpg",
@@ -5203,6 +5851,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 7900,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/monstera%20deliciosa.jpg",
@@ -5227,6 +5878,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 6500,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/cordyline%20fruticosa.jpg",
@@ -5251,6 +5905,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 1000,
       min_soil_ec: 50,
+      avgMoist: 37.5,
+      avgLux: 41500,
+      lightRequirements: "Medium-light or partial sun",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/dionaea%20muscipula.jpg",
@@ -5275,6 +5932,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 3750,
+      lightRequirements: "Very low-light or heavy shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/peperomia%20argyreia.jpg",
@@ -5299,6 +5959,9 @@ const allPlantData = [
       min_soil_moist: 20,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 40,
+      avgLux: 18750,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/ficus%20benjamina.jpg",
@@ -5323,6 +5986,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 26250,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/trachycarpus%20fortunei.jpg",
@@ -5347,6 +6013,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 12000,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/aphelandra%20squarrosa.jpg",
@@ -5371,6 +6040,9 @@ const allPlantData = [
       min_soil_moist: 15,
       max_soil_ec: 2000,
       min_soil_ec: 350,
+      avgMoist: 37.5,
+      avgLux: 10300,
+      lightRequirements: "Low light or partial shade",
     },
     image_url:
       "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdyd5yr3jypo/b/plant-img/o/zamioculcas%20zamiifolia.jpg",
