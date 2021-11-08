@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
   });
 
   const { username, plant_id } = event.pathParameters;
-  const { newNickName } = JSON.parse(event.body);
+  const { newNickName, lastWatered } = JSON.parse(event.body);
 
   const params = {
     TableName: "User-Data",
@@ -26,20 +26,31 @@ exports.handler = async (event, context) => {
     const data = await documentClient.get(params).promise();
 
     const plants = data.Item.userPlants;
-    const filteredPlants = plants.map((plant) => {
-      if (plant.plant_id === plant_id) {
-        plant.nickName = newNickName;
-      }
-      return plant;
-    });
-    console.log(filteredPlants);
+    let filteredPlants = [];
+
+    if (lastWatered) {
+      filteredPlants = plants.map((plant) => {
+        if (plant.plant_id === plant_id) {
+          plant.lastWatered = lastWatered;
+        }
+        return plant;
+      });
+    }
+
+    if (newNickName) {
+      filteredPlants = plants.map((plant) => {
+        if (plant.plant_id === plant_id) {
+          plant.nickName = newNickName;
+        }
+        return plant;
+      });
+    }
 
     const newParams = {
       TableName: "User-Data",
       Item: {
         username: data.Item.username,
         email: data.Item.email,
-        password: data.Item.password,
         userPlants: filteredPlants,
       },
     };
