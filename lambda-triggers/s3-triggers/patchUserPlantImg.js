@@ -2,8 +2,11 @@ const AWS = require("aws-sdk");
 
 var s3 = new AWS.S3();
 exports.handler = (event, context, callback) => {
-  const { img, username, plant_id, commonName } = JSON.parse(event.body);
+  const { img } = JSON.parse(event.body);
+  const { username, plant_id } = event.pathParameters;
   const key = `${username}_${plant_id}_${Date.now()}`;
+
+  console.log(event.pathParameters);
 
   let decodedImage = Buffer.from(img, "base64");
   var params = {
@@ -14,7 +17,6 @@ exports.handler = (event, context, callback) => {
     Metadata: {
       username,
       plant_id,
-      commonName,
       objectURL: `https://user-plant-bucket.s3.eu-west-2.amazonaws.com/${key}`,
     },
   };
