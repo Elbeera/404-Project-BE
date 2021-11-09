@@ -22,6 +22,8 @@ exports.handler = async (event, context, callback) => {
   try {
     const { Metadata } = await s3.getObject(s3Params).promise();
 
+    // user -------------
+
     const userParams = {
       TableName: "User-Data",
       Key: {
@@ -31,13 +33,16 @@ exports.handler = async (event, context, callback) => {
 
     const userData = await documentClient.get(userParams).promise();
     const userPlants = userData.Item.userPlants;
+    const userPlantCommonName = "";
 
     const updatedPlants = userPlants.map((plant) => {
       if (plant.plant_id === Metadata.plant_id) {
-        const updatedGallery = plant.userGallery
-          ? [...plant.userGallery, Metadata.objectURL]
-          : [Metadata.objectURL];
-        plant.userGallery = updatedGallery;
+        const updatedUserGallery = plant.userGallery
+          ? [...plant.userGallery, Metadata.objecturl]
+          : [Metadata.objecturl];
+        plant.userGallery = updatedUserGallery;
+        plant.image = Metadata.objecturl;
+        userPlantCommonName = plant.commonName;
       }
       return plant;
     });
@@ -50,8 +55,33 @@ exports.handler = async (event, context, callback) => {
         userPlants: updatedPlants,
       },
     };
-    console.log(updatedPlants);
+
     await documentClient.put(newUserParams).promise();
+
+    // plant -------------
+
+    const plantParams = {
+      TableName: "Plant-Data-New",
+      Key: {
+        commonName: userPlantCommonName,
+      },
+    };
+
+    const { Item } = await documentClient.get(plantParams).promise();
+
+    const updatedPlantGallery = Item.plantGallery
+      ? [...Item.plantGallery, Metadata.objecturl]
+      : [Metadata.objecturl];
+
+    const updatedPlantItem = { ...Item };
+    updatedPlantItem.plantGallery = updatedPlantGallery;
+
+    const newPlantParams = {
+      TableName: "Plant-Data-New",
+      Item: updatedPlantItem,
+    };
+
+    await documentClient.put(newPlantParams).promise();
 
     responseBody.msg = "Plant image inserted";
     statusCode = 200;
