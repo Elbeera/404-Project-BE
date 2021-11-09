@@ -33,7 +33,7 @@ exports.handler = async (event, context, callback) => {
 
     const userData = await documentClient.get(userParams).promise();
     const userPlants = userData.Item.userPlants;
-    const userPlantCommonName = "";
+    let userPlantCommonName = "";
 
     const updatedPlants = userPlants.map((plant) => {
       if (plant.plant_id === Metadata.plant_id) {
